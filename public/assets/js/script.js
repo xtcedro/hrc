@@ -2,5 +2,7 @@
 import { setupNavigation } from './navigation.js';
 
 document.addEventListener("DOMContentLoaded", () => {
+    loadHeader();
+    loadFooter();
     setupNavigation(); // ✅ Initialize navigation
 });
