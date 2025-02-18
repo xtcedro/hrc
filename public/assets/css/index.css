@@ -1,0 +1,107 @@
+/* index.css */
+
+/* Color Variables */
+:root {
+    --dark-red: #8b0000; /* Dark Red */
+    --gold: #ffd700;      /* Gold */
+    --light-gold: #fff8dc; /* Light Gold (for backgrounds) */
+    --darker-gold: #daa520; /* Darker Gold (for hover states) */
+    --dark-gray: #333; /* Dark Gray text */
+    --white: #fff;       /* White text */
+}
+
+/* Insurance Claims Section */
+.insurance-claims {
+    background-color: var(--light-gold); /* Light gold background */
+    color: var(--dark-gray);
+}
+
+.insurance-claims h2 {
+    color: var(--dark-red); /* Dark red heading */
+}
+
+.insurance-claims .cta-button {
+    background-color: var(--dark-red); /* Dark red button */
+    color: var(--white);
+}
+
+.insurance-claims .cta-button:hover {
+    background-color: #610000; /* Darker red on hover */
+}
+
+
+/* Pricing Section */
+.pricing {
+    background-color: var(--light-gold);
+    color: var(--dark-gray);
+}
+
+.pricing h2 {
+    color: var(--dark-red);
+}
+
+.pricing .cta-button {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.pricing .cta-button:hover {
+    background-color: #610000;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: var(--light-gold);
+    color: var(--dark-gray);
+}
+
+.why-choose-us h2 {
+    color: var(--dark-red);
+}
+
+.why-choose-us .cta-button {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.why-choose-us .cta-button:hover {
+    background-color: #610000;
+}
+
+/* AI Chatbot Section */
+.chatbot {
+    background-color: var(--light-gold);
+    color: var(--dark-gray);
+}
+
+.chatbot h2 {
+    color: var(--dark-red);
+}
+
+.chatbot .cta-button {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.chatbot .cta-button:hover {
+    background-color: #610000;
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--light-gold);
+    color: var(--dark-gray);
+}
+
+.contact h2 {
+    color: var(--dark-red);
+}
+
+.contact .cta-button {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.contact .cta-button:hover {
+    background-color: #610000;
+}
