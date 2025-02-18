@@ -19,6 +19,16 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Section Styling */
+section {
+    background: var(--primary-color);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.3);
+    border-left: 6px solid var(--border-color);
+}
 
 /* Hero Section (Optimized Padding & Animation) */
 .hero {
