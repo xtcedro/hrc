@@ -1,21 +1,33 @@
-/* General Styling */
+/* 🎨 Color Variables */
+:root {
+    --primary-color: #007BFF;
+    --primary-dark: #0056b3;
+    --secondary-color: #f8f9fa;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --border-color: #ccc;
+    --chat-bg: #fafafa;
+}
+
+/* 🌐 General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--background-color);
     text-align: center;
+    color: var(--text-color);
 }
 
-/* Header */
+/* 🏠 Header */
 header {
-    background: #007BFF;
+    background: var(--primary-color);
     color: white;
     padding: 20px;
     font-size: 24px;
 }
 
-/* Sections */
+/* 📦 Sections */
 section {
     margin: 20px auto;
     padding: 20px;
@@ -25,38 +37,58 @@ section {
     border-radius: 8px;
 }
 
-/* Form Elements */
+/* ✍️ Form Elements */
 input, button {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
+    font-size: 16px;
 }
 
 button {
-    background: #007BFF;
+    background: var(--primary-color);
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s ease-in-out;
 }
 
 button:hover {
-    background: #0056b3;
+    background: var(--primary-dark);
 }
 
-/* Chat Box */
+/* 💬 Chat Box */
 #chat-box {
     height: 250px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     overflow-y: auto;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #fafafa;
+    background-color: var(--chat-bg);
+    text-align: left;
 }
 
-/* Chat Input */
+#chat-box p {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#chat-box p.user {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: right;
+}
+
+#chat-box p.bot {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* 📝 Chat Input */
 .chat-input {
     display: flex;
     gap: 10px;
@@ -64,26 +96,26 @@ button:hover {
 
 .chat-input input {
     flex-grow: 1;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
 }
 
 .chat-input button {
     width: 100px;
 }
 
-/* System Status */
+/* 🔍 System Status */
 .system-status {
-    background: #f8f9fa;
+    background: var(--secondary-color);
     padding: 15px;
     border-radius: 8px;
 }
 
 #status {
     font-weight: bold;
-    color: #007BFF;
+    color: var(--primary-color);
 }
 
-/* Responsive Design */
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
     section {
         width: 90%;
