@@ -105,3 +105,42 @@
 .contact .cta-button:hover {
     background-color: #610000;
 }
+
+/* index.css */
+
+/* ... (Existing Color Variables and Section Styles) */
+
+/* CTA Button Styles */
+.cta-button {
+    display: block; /* Make buttons take full width of their container */
+    margin: 20px auto; /* Center the buttons horizontally */
+    padding: 15px 30px; /* Increase padding for larger button size */
+    font-size: 1.2rem; /* Increase font size for better readability */
+    background-color: var(--gold); /* Gold background */
+    color: var(--dark-red); /* Dark red text */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Keep the rounded corners */
+    text-align: center; /* Center the text within the button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    cursor: pointer; /* Indicate it's a clickable element */
+}
+
+.cta-button:hover {
+    background-color: var(--darker-gold); /* Darker gold on hover */
+    color: var(--dark-red); /* Keep dark red text on hover */
+}
+
+/* Specific Section Button Overrides (If Needed) */
+/* If you want to customize buttons in specific sections, you can add more specific rules.
+   For example, to make the Contact section button a different color: */
+.contact .cta-button {
+    background-color: var(--dark-red); /* Dark red for contact button */
+    color: var(--white);
+}
+
+.contact .cta-button:hover {
+    background-color: #610000; /* Darker red on hover */
+    color: var(--white);
+}
+
+/* ... (Rest of your CSS) */
