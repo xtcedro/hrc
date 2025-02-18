@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Chat & Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏠 Heavenly Roofing AI Assistant</h1>
+    </header>
+
+    <!-- Appointment Booking Section -->
+    <section class="appointments">
+        <h2>📅 Book an Appointment</h2>
+        <form id="appointment-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="datetime-local" id="date" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="appointment-list"></div>
+    </section>
+
+    <!-- Chat Section -->
+    <section class="chat-container">
+        <h2>💬 AI Live Chat</h2>
+        <div id="chat-box"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type a message..." required>
+            <button id="send-chat">Send</button>
+        </div>
+    </section>
+
+    <!-- System Status Section -->
+    <section class="system-status">
+        <h2>📡 System Status</h2>
+        <p id="status">Loading...</p>
+    </section>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
