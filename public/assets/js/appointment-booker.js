@@ -1,6 +1,6 @@
 export const API_BASE_URL = window.location.origin.includes('localhost')
   ? 'http://localhost:3000'
-  : 'https://www.domingueztechsolutions.com';
+  : 'https://www.heavenlyroofingok.com';
 
 // Function to handle form submission
 export function submitAppointments() {
