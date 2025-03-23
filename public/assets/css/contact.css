@@ -1,0 +1,169 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Color Variables */
+:root {
+    --primary-color: #8B0000; /* Dark Red */
+    --secondary-color: #FFD700; /* Gold */
+    --text-light: #ffffff;
+    --text-dark: #222222;
+    --background-light: #FAF3E0; /* Soft Cream for Contrast */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #600000, #8B0000); /* Dark Red Gradient */
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background: var(--background-light);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0px 6px 15px var(--shadow-color);
+    word-break: break-word; /* Prevents text from overflowing */
+    border-left: 6px solid var(--secondary-color); /* Gold accent */
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Section Header */
+.contact-info h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5); /* Gold glow */
+}
+
+/* Contact Details */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Contact List Items */
+.contact-info li {
+    font-size: 1.3rem;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Contact List Hover Effect */
+.contact-info li:hover {
+    background: rgba(255, 215, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Contact Links */
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-info a:hover {
+    color: var(--secondary-color);
+    text-shadow: 0px 0px 12px rgba(255, 215, 0, 1);
+}
+
+/* Note Styling */
+.contact-info em {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-style: italic;
+    margin-top: 12px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1.3rem;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    margin-top: 20px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0px 4px 12px var(--shadow-color);
+}
+
+/* CTA Button Hover */
+.cta-button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.08);
+    box-shadow: 0px 6px 18px rgba(255, 215, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        max-width: 90%;
+        padding: 2.5rem 1.5rem;
+        border-radius: 10px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.9rem;
+    }
+
+    .contact-info li {
+        font-size: 1.2rem;
+        flex-direction: column; /* Stacks items for better mobile readability */
+        text-align: center;
+    }
+
+    .contact-info a {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contact-info em {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+}
