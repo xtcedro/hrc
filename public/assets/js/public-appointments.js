@@ -1,6 +1,6 @@
 export const API_BASE_URL = window.location.origin.includes('localhost')
-    ? 'http://localhost:3000'
-    : 'https://www.domingueztechsolutions.com';
+    ? 'http://localhost:3001'
+    : 'https://www.heavenlyroofingok.com';
 
 export async function fetchAppointments() {
     try {
