@@ -13,8 +13,7 @@ export function setupNavigation() {
       const isExpired = decoded.exp * 1000 < Date.now();
       if (isExpired) {
         console.warn("🔐 Token expired. Logging out.");
-        localStorage.removeItem("adminToken");
-      } else {
+        localStorage.removeItem("adminToken"); } else {
         isAdmin = true;
       }
     }
