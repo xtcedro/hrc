@@ -1,0 +1,123 @@
+/* Font & Base */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Color Palette */
+:root {
+  --dark-red: #8B0000;
+  --gold: #FFD700;
+  --white: #ffffff;
+  --light-bg: #f5f5f5;
+  --input-border: #FFD700;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Wrapper */
+.payment-form-wrapper {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 2.5rem;
+  background: var(--dark-red);
+  color: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px var(--box-shadow);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Form */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Labels */
+.payment-form label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+/* Inputs */
+.payment-form input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 2px solid var(--input-border);
+  background: var(--white);
+  color: var(--dark-red);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.payment-form input:focus {
+  outline: none;
+  border-color: #e6c200;
+  box-shadow: 0 0 5px var(--gold);
+}
+
+/* Card Box */
+.card-box {
+  padding: 12px;
+  background: var(--white);
+  border-radius: 8px;
+  border: 2px solid var(--input-border);
+}
+
+/* Payment Request Button */
+.payment-request-box {
+  margin-top: 1rem;
+}
+
+/* Button */
+.btn {
+  background: var(--gold);
+  color: var(--dark-red);
+  padding: 14px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 6px 14px var(--box-shadow);
+}
+
+.btn:hover {
+  background: #e6c200;
+  transform: scale(1.05);
+}
+
+/* Message */
+.response-message {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .payment-form-wrapper {
+    margin: 30px 16px;
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
