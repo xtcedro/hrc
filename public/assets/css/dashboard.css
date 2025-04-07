@@ -76,3 +76,61 @@
   background-color: #cc0000;
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .content-management,
+  .system-tools,
+  .logout {
+    margin: 20px 16px;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .content-management h2,
+  .system-tools h2,
+  .logout h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .content-management ul li,
+  .system-tools ul li {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+
+  .content-management ul li a,
+  .system-tools ul li a {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .logout .cta-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-management h2,
+  .system-tools h2,
+  .logout h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-management ul li,
+  .system-tools ul li {
+    padding: 10px 14px;
+  }
+
+  .content-management ul li a,
+  .system-tools ul li a {
+    font-size: 0.95rem;
+  }
+
+  .logout .cta-button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
