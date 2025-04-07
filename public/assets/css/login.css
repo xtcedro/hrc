@@ -1,0 +1,103 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+/* Login Section */
+.login-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #0c0c0c;
+}
+
+.login-section {
+  background-color: #1a1a1a;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(139, 0, 0, 0.6);
+  max-width: 480px;
+  width: 100%;
+}
+
+/* Form Title */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ff4d4d;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid #800000;
+  background-color: #262626;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 5px #ff4d4d;
+}
+
+/* Submit Button */
+.btn {
+  width: 100%;
+  background-color: #a10000;
+  color: #fff;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.03);
+}
+
+/* Login Message */
+.login-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ff4d4d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-section {
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
