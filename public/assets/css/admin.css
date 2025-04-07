@@ -85,3 +85,24 @@ body {
     text-align: center;
   }
 }
+
+.logout-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1a0000;
+}
+
+.logout-message-wrapper h1 {
+  font-size: 2rem;
+  color: #ff4444;
+}
+
+.logout-message-wrapper p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffcc00;
+}
