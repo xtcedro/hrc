@@ -8,6 +8,7 @@ import chatRoutes from "./routes/chatRoutes.js";
 import stripeRoutes from "./routes/stripe.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
+import settingsRoutes from "./routes/settingsRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -45,6 +46,9 @@ console.log("➡️ Admin routes loaded at /api/admin");
 
 app.use("/api/dashboard", dashboardRoutes);
 console.log("➡️ Dashboard routes loaded at /api/dashboard");
+
+app.use("/api/settings", settingsRoutes);
+console.log("➡️ Settings routes loaded at /api/settings");
 
 // ✅ System Information
 const uptimeInMinutes = (os.uptime() / 60).toFixed(2);
