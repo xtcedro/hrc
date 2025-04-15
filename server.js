@@ -9,6 +9,7 @@ import stripeRoutes from "./routes/stripe.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
 import settingsRoutes from "./routes/settingsRoutes.js";
+import projectRoutes from "./routes/project Routes.js";
 
 dotenv.config();
 const app = express();
