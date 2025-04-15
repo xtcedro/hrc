@@ -1,0 +1,91 @@
+/* ================================
+   Edit Projects - Heavenly Roofing
+   ================================ */
+
+.settings-form-wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+  color: #fff;
+}
+
+.settings-form-wrapper h1 {
+  font-size: 2rem;
+  text-shadow: 0 0 6px #8b0000;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: gold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #8b0000;
+  background-color: #2b2b2b;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #ff5555;
+  box-shadow: 0 0 5px rgba(255, 85, 85, 0.6);
+}
+
+.btn {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #b22222;
+  transform: scale(1.03);
+}
+
+.response-message {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.response-message.info {
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .settings-form-wrapper {
+    padding: 1.25rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
