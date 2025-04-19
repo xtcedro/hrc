@@ -2,43 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Admin Login - Heavenly Roofing LLC" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login | Heavenly Roofing</title>
+  <meta name="description" content="Admin access portal for Heavenly Roofing dashboard." />
   <meta name="author" content="Pedro Dominguez" />
-  <title>Admin Login | Heavenly Roofing LLC</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <script type="module" src="assets/js/script.js"></script>
-  <script defer src="assets/js/login.js"></script>
+  <script src="assets/js/login.js" defer></script>
 </head>
 <body>
+  <!-- Navigation -->
   <nav class="navbar"></nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="assets/images/heavenly-banner.png" alt="Admin Login Banner" class="hero-banner" />
-    <h1>Admin Login 🔐</h1>
-    <p>Access your secure portal to manage appointments, payments, and business automation tools.</p>
-  </section>
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="login-container">
+      <h1 class="login-title">Admin Login 🔐</h1>
+      <p class="login-subtext">Authorized personnel only — Heavenly Roofing access panel.</p>
 
-  <!-- Login Form Section -->
-  <section class="login-form-section">
-    <div class="form-container login-section">
-      <form id="loginForm" class="admin-login-form login-form">
-        <h2>Secure Admin Portal</h2>
+      <form id="loginForm" class="login-form">
         <div class="form-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="admin user" required />
+          <label for="username">👤 Username</label>
+          <input type="text" id="username" name="username" required placeholder="Enter your username" />
         </div>
+
         <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="secure password" required />
+          <label for="password">🔒 Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password" />
         </div>
-        <button type="submit" class="btn">Login</button>
-        <p id="loginMessage" class="login-message response-message"></p>
+
+        <button type="submit" class="cta-button">Login</button>
+        <div id="loginMessage" class="login-message"></div>
       </form>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer id="footer"></footer>
 </body>
 </html>
