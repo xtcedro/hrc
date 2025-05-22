@@ -1,0 +1,111 @@
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #8B0000; /* Dark Red Background */
+    color: #FFD700; /* Gold Text */
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3); /* Dark Red Shadow */
+}
+
+/* Hero Banner */
+.hero-banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #FFD700; /* Gold Border */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Soft Gold Glow */
+    animation: glowBorder 2s infinite alternate;
+}
+
+/* Hero Title */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    margin-top: 1rem;
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    line-height: 1.6;
+    color: #FFF5CC; /* Light Gold */
+}
+
+/* Animated Glow Effect */
+@keyframes glowBorder {
+    from {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-banner {
+        max-height: 300px;
+        border-width: 3px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* General Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* View Appointments Button */
+.view-appointments {
+    background-color: #001f54; /* Dark Blue */
+    color: #FFD700; /* Gold Text */
+    border: 2px solid #FFD700; /* Gold Border */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4); /* Gold Glow Effect */
+}
+
+/* Hover Effect */
+.view-appointments:hover {
+    background-color: #FFD700; /* Gold Background */
+    color: #001f54; /* Dark Blue Text */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Stronger Glow */
+    transform: scale(1.05);
+}
+
+/* Click Effect */
+.view-appointments:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .view-appointments {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+}

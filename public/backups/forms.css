@@ -1,0 +1,94 @@
+/* Appointment Booker Section */
+.appointment-booker {
+    background-color: #7D0000; /* Dark Red */
+    color: #FFD700; /* Gold Text */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); /* Gold Shadow */
+    text-align: center;
+    border: 2px solid #FFD700; /* Gold Border */
+}
+
+.appointment-booker h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px #FFD700; /* Gold Glow Effect */
+}
+
+.appointment-booker p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Appointment Form */
+.appointment-form {
+    background-color: #8B0000; /* Slightly Lighter Dark Red */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+    border: 2px solid #FFD700; /* Gold Border */
+    text-align: left;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #FFD700; /* Gold Label Text */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #FFD700; /* Gold Border */
+    background-color: #fff; /* White Background */
+    color: #7D0000; /* Dark Red Text */
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #FFC300; /* Brighter Gold on Focus */
+}
+
+/* Response Message */
+.response-message {
+    background-color: #FFD700;
+    color: #7D0000;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Submit Button */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #FFD700; /* Gold Button */
+    color: #7D0000; /* Dark Red Text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #FFC300; /* Brighter Gold */
+    transform: scale(1.05);
+}

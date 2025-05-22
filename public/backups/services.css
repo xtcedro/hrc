@@ -1,0 +1,56 @@
+/* Services List Section */
+.services-list {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    background-color: #660000; /* Deep Dark Red */
+    color: #FFD700; /* Gold Text */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    text-align: center;
+    border: 3px solid #FFD700;
+}
+
+.services-list h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+}
+
+/* Services List */
+.services-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 215, 0, 0.1); /* Subtle gold background */
+    border-left: 5px solid #FFD700; /* Gold left border */
+    color: #fff;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover Effect */
+.services-list li:hover {
+    background: rgba(255, 215, 0, 0.3); /* Brighter gold */
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-list {
+        padding: 1.5rem;
+    }
+
+    .services-list h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-list li {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+}

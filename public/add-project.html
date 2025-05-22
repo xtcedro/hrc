@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Project | Heavenly Roofing LLC</title>
+  <meta name="description" content="Add a new roofing project to the Heavenly Roofing LLC gallery." />
+  <meta name="author" content="Pedro Dominguez" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="module" src="assets/js/script.js"></script>
+  <script defer src="assets/js/auth.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar"></nav>
+
+  <main class="settings-form-wrapper">
+    <h1 style="text-align: center; color: gold; margin-bottom: 1rem;">
+      🏠 Add New Project
+    </h1>
+
+    <form class="settings-form" id="projectForm">
+      <div class="form-group">
+        <label for="title">Project Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter project title..." required />
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="e.g., Oklahoma City, OK" required />
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        <input type="text" id="image" name="image" placeholder="e.g., assets/images/roof1.jpg" required />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Project Description</label>
+        <textarea id="description" name="description" placeholder="Describe the roofing project..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">💾 Add Project</button>
+      <p id="projectMessage" class="response-message info" style="margin-top: 20px; display: none;"></p>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <script>
+    const form = document.getElementById("projectForm");
+    const messageBox = document.getElementById("projectMessage");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const token = localStorage.getItem("adminToken");
+      const data = {
+        title: form.title.value,
+        location: form.location.value,
+        image: form.image.value,
+        description: form.description.value
+      };
+
+      try {
+        const res = await fetch("/api/projects", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (res.ok) {
+          messageBox.textContent = "✅ Project added successfully!";
+          messageBox.style.display = "block";
+          form.reset();
+        } else {
+          messageBox.textContent = `❌ ${result.error}`;
+          messageBox.style.display = "block";
+        }
+      } catch (err) {
+        messageBox.textContent = "❌ Server error.";
+        messageBox.style.display = "block";
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
